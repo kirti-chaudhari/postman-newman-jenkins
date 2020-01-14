@@ -1,0 +1,15 @@
+{
+  "name": "postman-newman-jenkin",
+  "version": "1.0.0",
+  "description": "project for storing postman tests",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "api-tests-sample": "newman run test/Test.postman_collection.json -e test/Test-123.postman_environment.json --reporters cli,htmlextra Output.xml   --insecure"
+  },
+  "author": "abc",
+  "dependencies": {
+    "newman": "^4.5.7"
+  }
+}

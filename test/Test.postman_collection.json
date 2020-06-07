@@ -7,6 +7,23 @@
 	"item": [
 		{
 			"name": "https://www.gmail.com/",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e408946a-facb-4435-8de3-897bf9d7913a",
+						"exec": [
+							"{\r",
+							"    pm.test(\"PASS\", function () {\r",
+							"        pm.response.to.have.status(200);\r",
+							"    });\r",
+							"}\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -27,6 +44,23 @@
 		},
 		{
 			"name": "https://www.gmail.com/",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "28827b16-017d-4489-9e92-99b9759eae88",
+						"exec": [
+							"{\r",
+							"    pm.test(\"PASS\", function () {\r",
+							"        pm.response.to.have.status(300);\r",
+							"    });\r",
+							"}\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],

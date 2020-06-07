@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "https://www.gmail.com/",
+			"name": "Test_01",
 			"event": [
 				{
 					"listen": "test",
@@ -18,6 +18,9 @@
 							"        pm.response.to.have.status(200);\r",
 							"    });\r",
 							"}\r",
+							"var jsonObject = {\"now\":\"new Date()\"};\r",
+							"var date = eval(jsonObject.now);\r",
+							"console.log(date)\r",
 							""
 						],
 						"type": "text/javascript"
@@ -43,7 +46,7 @@
 			"response": []
 		},
 		{
-			"name": "https://www.gmail.com/",
+			"name": "Test_02",
 			"event": [
 				{
 					"listen": "test",
@@ -52,7 +55,7 @@
 						"exec": [
 							"{\r",
 							"    pm.test(\"PASS\", function () {\r",
-							"        pm.response.to.have.status(300);\r",
+							"        pm.response.to.have.status(200);\r",
 							"    });\r",
 							"}\r",
 							""

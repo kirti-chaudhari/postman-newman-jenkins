@@ -6,7 +6,7 @@
     "test": "test"
   },
   "scripts": {
-    "api-tests-sample": "newman run test/Test.postman_collection.json -e test/Test-123.postman_environment.json --reporters cli,htmlextra --insecure"
+    "api-tests-sample": "newman run test/Test.postman_collection.json -e test/Test-123.postman_environment.json --reporters cli,junit --reporter-junit-export newman.xml"
 
   },
   "author": "abc",

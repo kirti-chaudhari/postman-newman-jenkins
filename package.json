@@ -6,18 +6,11 @@
     "test": "test"
   },
   "scripts": {
-    "api-tests-sample": "newman run test/Test.postman_collection.json -e test/Test-123.postman_environment.json -reporter-htmlextra-export "newman_result.html"
+    "api-tests-sample": "newman run test/Test.postman_collection.json -e test/Test-123.postman_environment.json --reporter-htmlextra-export 'newman_result.html'"
+
   },
   "author": "abc",
   "dependencies": {
     "newman": "^4.5.7"
-     publishHTML target: [
-            allowMissing: false,
-            alwaysLinkToLastBuild: false,
-            keepAll: true,
-            reportDir: '.',
-            reportFiles: 'newman_result.html',
-            reportName: 'Newman HTML Reporter'
-    ]
-  }
+    }
 }
